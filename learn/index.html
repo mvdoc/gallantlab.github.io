@@ -1,80 +1,131 @@
 <!DOCTYPE html>
-<html prefix="
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GallantLab · Learn </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn | GallantLab</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700%7CAbril+Fatface">
-<meta content="#5670d4" name="theme-color">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
 <link rel="canonical" href="https://gallantlab.org/learn/">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
-<meta name="author" content="Jack L. Gallant">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Jack L. Gallant">
+<meta property="og:site_name" content="GallantLab">
+<meta property="og:title" content="Learn">
+<meta property="og:url" content="https://gallantlab.org/learn/">
+<meta property="og:description" content="Voxelwise modeling is a framework for fitting linear(ized)
+      encoding models to functional magnetic resonance imaging (fMRI)
+      datasets. Voxelwise modeling can produce high-resolution,
+      h">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-03-24T23:52:52-07:00">
+<meta property="article:tag" content="training">
+<meta property="article:tag" content="tutorials">
 </head>
-<body class="">
-    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
-    <div class="hsidebar">
-        <div class="container sidebar-sticky">
-            <div class="sidebar-about">
-              <h1>
-                <a href="https://gallantlab.org/">
-                      <h1 id="brand"><a href="https://gallantlab.org/" title="GallantLab" rel="home">
+<!-- Menubar -->
 
-        <span id="blog-title">GallantLab</span>
-    </a></h1>
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
 
-                </a>
-              </h1>
-                <p class="lead">@ UCB</p>
+            <span id="blog-title">GallantLab</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            </div>
-                <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../">Home</a>
-        <a class="sidebar-nav-item" href="../brain_viewers">BrainViewers</a>
-        <a class="sidebar-nav-item" href="../papers">Papers</a>
-        <a class="sidebar-nav-item" href="../people">People</a>
-        <a class="sidebar-nav-item" href="../open_data">OpenData</a>
-        <a class="sidebar-nav-item" href="../open_code">OpenCode</a>
-        <a class="sidebar-nav-item" href="../learn">Learn</a>
-        <a class="sidebar-nav-item" href="../blog">Blog</a>
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../brain_viewers" class="nav-link">BrainViewers</a>
+                </li>
+<li class="nav-item">
+<a href="../papers" class="nav-link">Papers</a>
+                </li>
+<li class="nav-item">
+<a href="../people" class="nav-link">People</a>
+                </li>
+<li class="nav-item">
+<a href="../open_data" class="nav-link">OpenData</a>
+                </li>
+<li class="nav-item">
+<a href="../open_code" class="nav-link">OpenCode</a>
+                </li>
+<li class="nav-item">
+<a href="../learn" class="nav-link">Learn</a>
+                </li>
+<li class="nav-item">
+<a href="../blog" class="nav-link">Blog</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+    <a href="index.rst" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Learn</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="container" style="margin-bottom: 20px">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="../images/other/learn.VoxelwiseModels.jpg" alt="VM tutorial" class="img-fluid">
+</div>
+    <div class="col-md-9">
+      <a href="https://github.com/gallantlab/voxelwise_tutorials">
+      Voxelwise modeling</a> is a framework for fitting linear(ized)
+      encoding models to functional magnetic resonance imaging (fMRI)
+      datasets. Voxelwise modeling can produce high-resolution,
+      high-dimensional functional brain maps in single individuals,
+      while minimizing problems due to Type 1 and Type 2 error that are
+      common in other approaches to fMRI data analysis. This tutorial
+      provides step-by-step instruction on how to use this method.
+    </div>
+  </div>
+</div>
+    </div>
     
-    
-    </nav><footer id="footer"><span class="copyright">
-              This site was last updated on March 30, 2023 ©          <a href="mailto:gallant@berkeley.edu">Jack L. Gallant</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
-            </span>
+
+</article><!--End of body content--><footer id="footer">
+            This site was last updated on March 30, 2023 ©          <a href="mailto:gallant@berkeley.edu">Jack L. Gallant</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
             
         </footer>
 </div>
-    </div>
-
-    <div class="content container" id="content">
-<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name"><a href="." class="u-url">Learn</a></h1>
-
-        
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <table><tbody><tr>
-<td><img alt="/images/other/himalaya.png" src="../images/other/himalaya.png"></td>
-<td><p><a class="reference external" href="https://github.com/gallantlab/voxelwise_tutorials">Voxelwise modeling tutorials.</a>
-Voxelwise modeling is a framework for fitting linear(ized)
-encoding models to functional magnetic resonance imaging (fMRI)
-datasets. Voxelwise modeling can produce high-resolution,
-high-dimensional functional brain maps in single individuals,
-while minimizing problems due to Type 1 and Type 2 error that are
-common in other approaches to fMRI data analysis.</p></td>
-</tr></tbody></table>
 </div>
-    
-</article>
-</div>
-            <script src="../assets/js/all-nocdn.js"></script><script>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
